@@ -58,6 +58,7 @@ h1,.vision_mb{display: none;}
 .appWords a:hover{ color: #f9f31e;}
 picture,img{
   width: 100%;
+  image-rendering: -webkit-optimize-contrast;
 }
 .visual{
   width: 100%;
