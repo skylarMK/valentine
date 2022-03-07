@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="../css/styleIE.css" />
+    <![endif]-->
+
+  <!--[if IE 8 | IE 9]>
+    <link href="/event/GhostMonth/css/mainIE.css" rel="stylesheet" />
+    <![endif]-->
+  <meta charset="UTF-8">
+  <title>SETN三立新聞網APP|我放閃我驕傲！投票甜膩情話大賞抽閃光大獎│三立新聞網SETN.COM</title>
+
+  <meta name="Title" content=" SETN三立新聞網APP│我放閃我驕傲！投票甜膩情話大賞抽閃光大獎| 三立新聞網 SETN.COM" />
+  <meta name="Description" content="嫌十大情話太弱？下載三立新聞網APP留下愛情金句抽購物金" />
+  <meta name="Keywords" content="APP活動,抽獎,情人節,告白,放閃,閃光,去死去死團,情侶 ,三立新聞網,SETN" />
+  <meta property="og:title" content=" SETN三立新聞網APP|我放閃我驕傲！投票甜膩情話大賞抽閃光大獎" />
+  <meta property="og:description" content="嫌十大情話太弱？留下愛情金句抽購物金| 三立新聞網 SETN.COM " />
+  <meta property="og:image" content="https://acts.setn.com/event/2021valentine/images/1800x945.png" />
+  <meta property="og:url" content="https://acts.setn.com/event/2021valentine" />
+
+  <link rel="shortcut icon" href="https://www.setn.com/favicon.ico" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!--    匯入jQuery    -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link href="https://www.setn.com/resources/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://www.setn.com/resources/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+
+  <!-- Start Alexa Certify Javascript -->
+  <script type="text/javascript">
+    _atrk_opts = { atrk_acct: "dMuYi1a8Dy00yP", domain: "setn.com", dynamic: true };
+    (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+  </script>
+  <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=dMuYi1a8Dy00yP" style="display:none"
+      height="1" width="1" alt="" /></noscript>
+  <!-- End Alexa Certify Javascript -->
+  <!-- Begin comScore Tag -->
+  <script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "20617561" });
+    (function () {
+      var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+      el.parentNode.insertBefore(s, el);
+    })();
+  </script>
+  <noscript>
+    <img src="https://b.scorecardresearch.com/p?c1=2&c2=20617561&cv=2.0&cj=1" />
+  </noscript>
+  <!-- End comScore Tag -->
+  <!-- Start GA Certify Javascript -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-37193510-5', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+
+</head>
+
+<body>
+
+  <h1>三立新聞網APP</h1>
+  <div class="2021valentine" id="app" v-cloak>
+    <div class="qrcode">
+      <a class="fb" @click="FacebookShare()">
+        <img src="images/fb.png" alt="分享至臉書">
+      </a>
+      <a class="qrcodeM" href="https://acts.setn.com/app/?pk_vid=a7a76d2cdf84366016128510440376a4" target="_blank"><img
+          src="images/qrcode.png">
+      </a>
+    </div>
+
+    <div class="visualArea">
+      <div class="logo"><a href="https://www.setn.com" target="_blank"><img src="images/logo.png" alt="三立新聞網"></a>
+      </div>
+      <div class="noticeArea">
+        <div class="noticeWords"><a href="#" @click.prevent="toggleDialog('NOTE')">◎活動辦法</a></div>
+        <div class="noticeWords"><a href="#" @click.prevent="scrollMotion('prize')">◎閃光大獎</a></div>
+        <div class="noticeWords"><a href="#" @click.prevent="toggleDialog('WARNING')">◎注意事項</a></div>
+      </div>
+      <div class="visualCon">
+        <div class="visualTitle"><img src="images/title.png"></div>
+        <div class="visualWords">
+          <p>我放閃我驕傲！你愛甜又撩的<span>奶油情話</span>還是滿滿疊字的<span>肉麻情話?</span>
+            <br>即日起至<span>3/17</span>前投票抽閃光大獎　投越多抽越多</p>
+        </div>
+        <div class="visualBtm">
+          <div class="btnBox">
+            <a class="vote" @click.prevent="scrollMotion('vote')"></a>
+            <a class="gift" @click.prevent="scrollMotion('prize')"></a>
+          </div>
+          <div class="tips">
+            <p><i class="fas fa-heart"></i><span>招式一</span> / 挑選情話按下愛心，邊學邊拿閃光大獎</p>
+            <p><i class="fas fa-heart"></i><span>招式二</span> / 嫌十大情話太弱？留下愛情金句抽甜蜜好禮<a @click.prevent="scrollMotion('appArea')">
+              <span class="tipsColor">GO</span></a></p>
+            <p><i class="fas fa-heart"></i><span>招式三</span> / 畫面太閃我不敢看！火速加入<a
+                href="https://acts.setn.com/event/2021singlelover" target="_blank"><span
+                  class="tipsColor">去鼠去鼠團</span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reminderBox" v-show="dialog == 'REMINDER'">
+      <!-- <a class="close"><img src="images/close.png" alt=""></a> -->
+      <div class="reminder"><img src="images/reminder.jpg"></div>
+    </div>
+
+    <div class="popUp" v-show="dialog == 'NOTE'">
+      <a class="close" @click.prevent="toggleDialog('NOTE')"><img src="images/close.png" alt=""></a>
+      <div class="popUpArea">
+        <div class="noticeBox">
+          <div class="noticeTitle"><img src="images/noticeTitle1.png" alt="活動辦法"></div>
+          <div class="noticeCon">
+            <ul>
+              <li class="underline">活動期間：即日起至110年03月17日晚間23:59</li>
+              <li class="noticeTitleColor"><i class="fas fa-heart"></i>活動辦法：</li>
+              <li>微甜的白色情人節需要你的熱情加持！活動期間內參加<span class="noticeColor">票選十大情話</span>或<span
+                  class="noticeColor">自行投稿情話</span>，都有機會獲得情人節禮物喔！</li>
+              <li class="noticeTitleColor"><i class="fas fa-heart"></i>票選</li>
+              <li>投票給最打動你心的劇中經典台詞，每個會員限參加乙次抽獎，但無每日投票票數限制。</li>
+              <li class="noticeTitleColor"><i class="fas fa-heart"></i>投稿</li>
+              <li>下載三立新聞網App，點選「悄悄留情話」活動廣告，依照頁面指示留下你想說的話, 即獲閃光好禮抽獎資格。</li>
+              <li class="noticeTitleColor">特別提醒：</li>
+              <li>
+                本活動是透過您於三立新聞網APP會員中心所填寫之「電子信箱」進行後續中獎通知，請務必下載《三立新聞網》APP並自行完成會員資料，若資料不全造成主辦單位無法寄發中獎通知，視同自動放棄資格，不另補發。禁止謾罵、人身攻擊、與主題活動無關之垃圾訊息、勿使用emogi表情符號。凡於本版留言中有以上情形者，本公司將予以刪除，如有獲獎也將取消得獎資格,敬請見諒。
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popUp2" v-show="dialog == 'WARNING'">
+      <a class="close" @click.prevent="toggleDialog('WARNING')"><img src="images/close.png" alt=""></a>
+      <div class="popUpArea">
+        <div class="noticeBox">
+          <div class="noticeTitle"><img src="images/noticeTitle2.png" alt="活動辦法"></div>
+          <div class="noticeCon noticeList">
+            <ul class="fontSize">
+              <li>
+                1.請務必下載《三立新聞網》APP並完成會員資料填寫。本活動所獲得之個人資料僅用於聯繫、商品寄送等用途，參加者同意授權予三立新聞網活動頁所需之個人資料，並同意主辦單位管理本活動、加入三立新聞網APP會員使用。
+              </li>
+              <li>2.每個會員限參加乙次抽獎，但無每日的投票票數限制。</li>
+              <li>
+                3.本活動除了「票券類」獎項由主辦單位以掛號信件寄出之外；其餘獎項皆請得獎者自付運費(宅配貨到付款)，或至本公司親領（台北市內湖區舊宗路一段159號三立新聞網－閃光情人節活動小組）。住宿票券類使用注意事項、效期及條件除有特別約明外，概依該票券發行單位之規定為主，本公司無須負擔相關責任。
+              </li>
+              <li>
+                4.本活動之活動辦法及相關注意事項均載明於活動網頁中，參加者於參加本活動之同時，即視為已詳閱並同意接受本活動之活動辦法及相關注意事項之規範，如有違反本活動之活動辦法及相關注意事項之行為，主辦單位或三立新聞網除得取消其參加或得獎資格外，並對於任何破壞本活動之行為保留相關權利。
+              </li>
+              <li>
+                5.參加者應保證其因參加本活動所填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。一經主辦單位或三立新聞網發現或經第三人檢舉該等資料有不實或不正確之情事，主辦單位或三立新聞網得取消其參加或得獎資格。若因此致主辦單位或三立新聞網無法通知其得獎訊息時，主辦單位及三立新聞網不負任何責任，如主辦單位或三立新聞網或其他任何第三人因此而受有損害，參加者應負一切相關責任。
+              </li>
+              <li>
+                6.依稅法規定，得獎價值超過新台幣1,000元以上者，需繳交身分證影本報稅使用，贈品價值超過新台幣20,000元以上，依法須負擔10%機會中獎稅，並於次年度寄發所得稅扣(免)繳憑單；若非中華民國國境內居住之國人（即在中華民國境內居住未達183天之本國人及外國人），不論得獎人所得之金額，須就中獎所得扣繳20%機會中獎稅，扣繳稅款未超過2,000元，免扣繳（外籍人士不適用）；未滿14歲兒童中獎，視同監護人中獎，由監護人代為領取。得獎者須提供身分證正反面影本供核對備查使用，若得獎人不願意提供資料，則視同放棄得獎資格。
+              </li>
+              <li>7.本活動所涉及之相關資料及記錄，均以主辦單位或三立新聞網電腦系統所記錄或留存者為準。</li>
+              <li>8.獎品以實物為準，不得折換現金。如遇產品缺貨或不可抗力之事由，主辦單位有權變更獎品內容，並改由其他等值商品取代，得獎者不得異議。且主辦單位與活動單位就該獎品不負任何維修及保固責任。</li>
+              <li>9.本活動獎品寄送地區僅限台灣地區(包含本島、金門、澎湖、馬祖及台灣政府行政權所及之其他地區)，恕無法寄送至海外。</li>
+              <li>10.相關活動公告皆以活動網站公告為主，恕不另行通知。主辦單位保有修正、暫停或終止本活動之權利。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 登入區 -->
+    <div class="popUp3" v-show="dialog == 'REGISTER'">
+    <a class="close" @click.prevent="toggleDialog('REGISTER')"><img src="images/close.png" alt=""></a>
+    <div class="popUpArea">
+      <div class="noticeBox">
+        <div class="noticeCon">
+          <div class="logIn"><i class="fas fa-heart"></i>會員登入</div>
+          <div class="shake">
+            <input id="hasAgreed" type="checkbox" class="checkBox" v-model="user.hasAgreed">
+            <label for="hasAgreed" class="labelBox">
+              我同意參加抽獎即成為<a href="https://acts.setn.com/app/" target="_blank"><span class="noticeTitleColor">三立新聞網APP</span></a>會員，並已詳閱
+              <a href="https://www.setn.com/terms.aspx" target="_blank">
+                〈服務條款〉</a>和
+              <a href="https://www.setn.com/Privacy.aspx" target="_blank">
+                〈隱私權政策〉</a>
+            </label>
+          </div>
+          <div class="logInBtn" @click.prevent="start()">確定</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 登入區 end-->
+
+    <!-- 登入區2 -->
+    <div class="popUp4" v-show="dialog == 'EMAIL'">
+    <a class="close" @click.prevent="toggleDialog('EMAIL')"><img src="images/close.png" alt=""></a>
+    <div class="popUpArea">
+      <div class="noticeBox">
+        <div class="noticeCon">
+          <div class="logInNotice">
+            活動贈品將根據你輸入的「Email」於活動結束後發送得獎通知，請務必提供。
+          </div>
+          <div class="email">
+                Email:<input type="text" class="fromText" v-model="user.email">
+          </div>
+          <div class="logInBtn" @click.prevent="updateEmail()">確定</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 登入區2 end-->
+
+    <div class="maskBg" v-show="dialog!=''"></div>
+
+    <div id="vote" class="voteArea">
+
+      <div class="voteCarousel owl-carousel owl-theme">
+        <div class="item" v-for="value in voteList">
+          <div class="voteBox">
+            <div class="loveLetter">
+              <div class="loveImg"><img :src="value.image"></div>
+              <div class="loveWords">{{value.title}}</div>
+              <div class="voteNum"><div :class="'like_'+value.id">{{value.like}}</div><i class="fas fa-heart"  @click.prevent="checkAgree(value.id)"></i></div>
+            </div>
+            <div class="voteWord">閃光指數</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heartArea">
+        <div class="heartTitle"><span>小鹿亂撞指數</span><i class="fas fa-heart"></i></div>
+        <div class="shapeBox">
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 0}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 0}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 5000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 10000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 20000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 30000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 50000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 100000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 180000}"></div>
+          </div>
+          <div class="shape">
+            <div class="triangle"></div>
+            <div class="round" :class="{ 'roundNone' : voteCount < 300000}"></div>
+          </div>
+          <div class="number"><span>{{toThousands(voteCount)}}</span>個</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="prize" class="prizeArea">
+      <div class="prizeBox">
+        <div class="prizeTitle"><img src="images/title2.png"></div>
+        <div class="prize">
+          <a href="https://myclubmarriott.com/zh-hant" target="_blank"><img src="images/prize1.png"></a>
+          <a href="https://www.ttmask.com/product/TTM%20%E5%90%91%E6%97%A5%E8%91%B5%E6%B4%BB%E5%8A%9B%E5%85%89%E9%87%87%E4%B9%B3%E9%9C%9C%E7%B2%BE%E8%8F%AF"
+            target="_blank"><img src="images/prize2.png"></a>
+          <a href="https://www.myswiss.life/categories/swissforce" target="_blank"><img src="images/prize3.png"></a>
+          <a href="http://www.twcds.com.tw/" target="_blank"><img src="images/prize4.png"></a>
+        </div>
+      </div>
+
+      <div class="prizeBox">
+        <div class="prizeTitle"><img src="images/title3.png"></div>
+        <div class="prize">
+          <a href="" target="_blank" style="cursor:default;"><img src="images/prize5.png"></a>
+          <a href="https://myclubmarriott.com/zh-hant" target="_blank"><img src="images/prize6.png"></a>
+          <a href="http://www.achronaroma.com/" target="_blank"><img src="images/prize7.png"></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="gotop"><i class="fa fa-angle-up"></i></div>
+
+    <div id="appArea" class="appArea">
+      <div class="appTitle"><img src="images/title4.png"></div>
+      <div class="appCon">
+        <div class="appWords">
+          至<a href="https://acts.setn.com/app/?pk_vid=a7a76d2cdf84366016128510440376a4"
+            target="_blank">三立新聞網APP</a><span>【悄悄說情話】</span>
+          活動專區留言分享你聽過或是你曾說過的情話，抽
+          <span>雙人住宿券、頂級高空SPA、血拚購物金等甜蜜好禮</span>，現在就參加吧！
+        </div>
+        <div class="appStep">
+          <div class=" appCarousel owl-carousel owl-theme">
+            <div class="item"><img src="images/step1.jpg"></div>
+            <div class="item"><img src="images/step2.jpg"></div>
+            <div class="item"><img src="images/step3.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="appAreaBg"></div>
+      <footer>©2021 Sanlih E-Television All Rights Reserved 版權所有 盜用必究</footer>
+    </div>
+  </div>
+  <script src="https://www.setn.com/resources/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/facebook.js"></script>
+  <script src="js/detectAgent.js"></script>
+</body>
+
+</html>
